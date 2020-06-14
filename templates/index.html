@@ -15,8 +15,17 @@
     {% for content in short_stories %}
       <p><a href="content/stories/{{content}}" class="japanese content-item">{{content}}</a></p>
     {% endfor %}
+
     <p class="subheading">News Articles</p>
+    {% for content in news_articles %}
+      <p><a href="content/news/{{content}}" class="japanese content-item">{{content}}</a></p>
+    {% endfor %}
+    
     <p class="subheading">Light Novels</p>
+    {% for content in light_novel %}
+      <p><a href="content/ln/{{content}}" class="japanese content-item">{{content}}</a></p>
+    {% endfor %}
+    
     <p class="subheading">Common Sources</p>
     <p><a href="https://www3.nhk.or.jp/news/easy/" target="_blank" class="link">NHK Easy</a></p>
   </div>
