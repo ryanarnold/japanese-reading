@@ -1,40 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>日本語</title>
+{% extends 'base.html' %}
 
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/static/css/index.css">
-</head>
-<body>
-
-  <div class="container">
-    <div class="row">
-      <h1>Reading Content</h1>
-    </div>
-
-    <div class="row navbar">
-      Content / Upload
-    </div>
-    
-    <div class="row">
-      <p class="subheading">Short Stories</p>
-      {% for content in short_stories %}
-        <p><a href="content/stories/{{content}}" class="japanese content-item">{{content}}</a></p>
-      {% endfor %}
-      <p class="subheading">News Articles</p>
-      <p class="subheading">Light Novels</p>
-    </div>
+{% block content %}
+<div class="container">
+  <div class="row">
+    <h1>Reading Content</h1>
   </div>
 
+  <div class="row navbar">
+    <a href="/" class="link">Content</a> / <a href="upload" class="link">Upload</a>
+  </div>
   
-
-  
-
-  <script src='/static/js/index.js'></script>
-  
-</body>
-</html>
+  <div class="row">
+    <p class="subheading">Short Stories</p>
+    {% for content in short_stories %}
+      <p><a href="content/stories/{{content}}" class="japanese content-item">{{content}}</a></p>
+    {% endfor %}
+    <p class="subheading">News Articles</p>
+    <p class="subheading">Light Novels</p>
+    <p class="subheading">Common Sources</p>
+    <p><a href="https://www3.nhk.or.jp/news/easy/" class="link">NHK Easy</a></p>
+  </div>
+</div>
+{% endblock content %}
