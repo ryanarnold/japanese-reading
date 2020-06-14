@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日本語</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/content.css">
+  <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <p><a href="\">Home</a></p>
+      <h1 class="content-heading japanese">{{ content_title }}</h1>
+    </div>
+    
+    <div class="row">
+      <p class="japanese content">{{ content | safe }}</p>
+    </div>
+  </div>
+
+  
+
+  
+
+  <script src='/static/js/index.js'></script>
+  
+</body>
+</html>

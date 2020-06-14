@@ -1,0 +1,52 @@
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr 1fr;
+}
+
+.row {
+  grid-column: 2;
+}
+
+h1 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 48px;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.subheading {
+  font-weight: bold;
+}
+
+.content-item {
+  font-size: 28px;
+  color: black;
+  text-decoration: none;
+}
+
+.content-item:hover {
+  text-decoration: underline;
+}
+
+.japanese {
+  font-family: 'Noto Serif JP', serif;
+}
+
+.content-heading {
+  text-align: left;
+  font-size: 48px;
+  font-weight: lighter;
+}
+
+.content {
+  font-size: 24px;
+  line-height: 36px;
+}
